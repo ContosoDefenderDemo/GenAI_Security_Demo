@@ -1,0 +1,346 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "antimalware",
+          "rules": [
+            {
+              "id": "NoThreatsFound",
+              "name": "No threats were found by AntiMalware."
+            }
+          ],
+          "properties": {
+            "RawName": "antimalware"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.24050.7-0\\MpCmdRun.exe\" -Scan -ScanType 3 -DisableRemediation -File D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo",
+          "executionSuccessful": true
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      
+      "results": [],
+      "columnKind": "utf16CodeUnits",
+      "properties": {
+        "toolInfoId": "antimalware>>0>>202407081436"
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "bandit",
+          "properties": {
+            "RawName": "Bandit"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "endTimeUtc": "2024-07-08T14:35:53.000Z",
+          "executionSuccessful": true
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      
+      "results": [],
+      "columnKind": "utf16CodeUnits",
+      "properties": {
+        "metrics": {"_totals":{"loc":466,"nosec":0,"SEVERITY.UNDEFINED":0.0,"CONFIDENCE.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"CONFIDENCE.LOW":0.0,"SEVERITY.MEDIUM":0.0,"CONFIDENCE.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\Home.py":{"loc":24,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\1_Search.py":{"loc":22,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\2_URL_Summary.py":{"loc":33,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\3_Text_Summary.py":{"loc":25,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\4_Document_Summary.py":{"loc":32,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\5_News_Summary.py":{"loc":55,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\6_Settings.py":{"loc":12,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\chroma-summary\\streamlit_app.py":{"loc":32,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\helicone\\streamlit_app.py":{"loc":25,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\news-summary\\streamlit_app.py":{"loc":54,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\pinecone-qa\\streamlit_app.py":{"loc":35,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\pinecone-summary\\streamlit_app.py":{"loc":34,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\search\\streamlit_app.py":{"loc":23,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\text-summary\\streamlit_app.py":{"loc":25,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\url-summary\\streamlit_app.py":{"loc":35,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0}},
+        "toolInfoId": "bandit>>1>>202407081436"
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "templateanalyzer",
+          "organization": "Microsoft",
+          "fullName": "Template Analyzer",
+          "version": "0.7.0+582d9199d19acc60716af8f0874dc51cec6aa01b",
+          "informationUri": "https://github.com/Azure/template-analyzer",
+          "rules": [
+            {
+              "id": "AZR-000280",
+              "name": "Azure.Cognitive.PublicAccess",
+              "fullDescription": {
+                "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate."
+              },
+              "help": {
+                "text": "Consider configuring network access restrictions for Cognitive Services accounts. Limit access to accounts so that access is permitted from authorized virtual networks only."
+              },
+              "shortDescription": {
+                "text": "Restrict Cognitive Service endpoints."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.PublicAccess/"
+            },
+            {
+              "id": "AZR-000282",
+              "name": "Azure.Cognitive.DisableLocalAuth",
+              "fullDescription": {
+                "text": "To send requests to Cognitive Services endpoints, each request must include an authentication header. Cognitive Services endpoints supports authentication with keys or tokens. Using an Azure AD token instead of a cryptographic key has some additional security benefits.\r\nWith Azure AD authentication, the identity is validated against Azure AD identity provider. Using Azure AD identities centralizes identity management and auditing.\r\nOnce you decide to use Azure AD authentication, you can disable authentication using keys."
+              },
+              "help": {
+                "text": "Consider only using Azure AD identities to authenticate requests to Cognitive Services accounts. Once configured, disable authentication based on access keys."
+              },
+              "shortDescription": {
+                "text": "Use identity-based authentication for Cognitive Services accounts."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "To send requests to Cognitive Services endpoints, each request must include an authentication header. Cognitive Services endpoints supports authentication with keys or tokens. Using an Azure AD token instead of a cryptographic key has some additional security benefits.\r\nWith Azure AD authentication, the identity is validated against Azure AD identity provider. Using Azure AD identities centralizes identity management and auditing.\r\nOnce you decide to use Azure AD authentication, you can disable authentication using keys."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.DisableLocalAuth/"
+            },
+            {
+              "id": "AZR-000283",
+              "name": "Azure.Cognitive.PrivateEndpoints",
+              "fullDescription": {
+                "text": "By default, a public endpoint is enabled for Cognitive Services accounts. The public endpoint is used for all access except for requests that use a Private Endpoint. Access through the public endpoint can be disabled or restricted to authorized virtual networks.\r\nData exfiltration is an attack where an malicious actor does an unauthorized data transfer. Private Endpoints help prevent data exfiltration by an internal or external malicious actor. They do this by providing clear separation between public and private endpoints. As a result, broad access to public endpoints which could be operated by a malicious actor are not required."
+              },
+              "help": {
+                "text": "Consider accessing Cognitive Services accounts by Private Endpoints and disabling public endpoints."
+              },
+              "shortDescription": {
+                "text": "Use Cognitive Service Private Endpoints."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "By default, a public endpoint is enabled for Cognitive Services accounts. The public endpoint is used for all access except for requests that use a Private Endpoint. Access through the public endpoint can be disabled or restricted to authorized virtual networks.\r\nData exfiltration is an attack where an malicious actor does an unauthorized data transfer. Private Endpoints help prevent data exfiltration by an internal or external malicious actor. They do this by providing clear separation between public and private endpoints. As a result, broad access to public endpoints which could be operated by a malicious actor are not required."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.PrivateEndpoints/"
+            }
+          ],
+          "properties": {
+            "RawName": "Template Analyzer"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "startTimeUtc": "2024-07-08T14:36:58.014Z",
+          "endTimeUtc": "2024-07-08T14:37:01.735Z",
+          "toolExecutionNotifications": [
+            {
+              "message": {
+                "text": "Discovered 1 template-parameter pairs to analyze"
+              },
+              "level": "note"
+            }
+          ],
+          "executionSuccessful": true
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///D:/a/GenAI_Security_Demo/GenAI_Security_Demo"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "mdc-openai-resource.json",
+            "uriBaseId": "ROOTPATH"
+          }
+        }
+      ],
+      "results": [],
+      "columnKind": "utf16CodeUnits",
+      "properties": {
+        "toolInfoId": "templateanalyzer>>2>>202407081436"
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "checkov",
+          "organization": "bridgecrew",
+          "version": "3.2.144",
+          "informationUri": "https://checkov.io",
+          "rules": [
+            {
+              "id": "CKV_AWS_187",
+              "name": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)",
+              "fullDescription": {
+                "text": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)"
+              },
+              "help": {
+                "text": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-107"
+            },
+            {
+              "id": "CKV_AWS_122",
+              "name": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance",
+              "fullDescription": {
+                "text": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance"
+              },
+              "help": {
+                "text": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-direct-internet-access-is-disabled-for-an-amazon-sagemaker-notebook-instance"
+            },
+            {
+              "id": "CKV_AWS_22",
+              "name": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK",
+              "fullDescription": {
+                "text": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK"
+              },
+              "help": {
+                "text": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-14"
+            },
+            {
+              "id": "CKV_AWS_306",
+              "name": "Ensure SageMaker notebook instances should be launched into a custom VPC",
+              "fullDescription": {
+                "text": "Ensure SageMaker notebook instances should be launched into a custom VPC"
+              },
+              "help": {
+                "text": "Ensure SageMaker notebook instances should be launched into a custom VPC\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-306"
+            },
+            {
+              "id": "CKV_AWS_371",
+              "name": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2",
+              "fullDescription": {
+                "text": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2"
+              },
+              "help": {
+                "text": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "CKV_AWS_307",
+              "name": "Ensure SageMaker Users should not have root access to SageMaker notebook instances",
+              "fullDescription": {
+                "text": "Ensure SageMaker Users should not have root access to SageMaker notebook instances"
+              },
+              "help": {
+                "text": "Ensure SageMaker Users should not have root access to SageMaker notebook instances\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-307"
+            },
+            {
+              "id": "CKV2_AWS_68",
+              "name": "Ensure SageMaker notebook instance IAM policy is not overly permissive",
+              "fullDescription": {
+                "text": "Ensure SageMaker notebook instance IAM policy is not overly permissive"
+              },
+              "help": {
+                "text": "Ensure SageMaker notebook instance IAM policy is not overly permissive\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "CKV2_GHA_1",
+              "name": "Ensure top-level permissions are not set to write-all",
+              "fullDescription": {
+                "text": "Ensure top-level permissions are not set to write-all"
+              },
+              "help": {
+                "text": "Ensure top-level permissions are not set to write-all\nResource: on(MSDO windows-latest)"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            }
+          ],
+          "properties": {
+            "RawName": "Checkov"
+          }
+        }
+      },
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      
+      "results": [],
+      "columnKind": "utf16CodeUnits",
+      "properties": {
+        "toolInfoId": "checkov>>3>>202407081436"
+      }
+    }
+  ]
+}

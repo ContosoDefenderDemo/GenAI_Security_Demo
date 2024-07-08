@@ -1,0 +1,746 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "antimalware",
+          "rules": [
+            {
+              "id": "NoThreatsFound",
+              "name": "No threats were found by AntiMalware."
+            }
+          ],
+          "properties": {
+            "RawName": "antimalware"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.24050.7-0\\MpCmdRun.exe\" -Scan -ScanType 3 -DisableRemediation -File D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo",
+          "executionSuccessful": true
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      "results": [],
+      "columnKind": "utf16CodeUnits",
+      "policies": [
+        {
+          "name": "GitHub",
+          "version": "2.0.3"
+        }
+      ],
+      "properties": {
+        "toolInfoId": "antimalware>>0>>202407081436"
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "bandit",
+          "properties": {
+            "RawName": "bandit"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "endTimeUtc": "2024-07-08T14:35:53.000Z",
+          "executionSuccessful": true
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      "results": [],
+      "columnKind": "utf16CodeUnits",
+      "policies": [
+        {
+          "name": "GitHub",
+          "version": "2.0.3"
+        }
+      ],
+      "properties": {
+        "metrics": {"_totals":{"loc":466,"nosec":0,"SEVERITY.UNDEFINED":0.0,"CONFIDENCE.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"CONFIDENCE.LOW":0.0,"SEVERITY.MEDIUM":0.0,"CONFIDENCE.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\Home.py":{"loc":24,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\1_Search.py":{"loc":22,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\2_URL_Summary.py":{"loc":33,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\3_Text_Summary.py":{"loc":25,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\4_Document_Summary.py":{"loc":32,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\5_News_Summary.py":{"loc":55,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\all-in-one\\pages\\6_Settings.py":{"loc":12,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\chroma-summary\\streamlit_app.py":{"loc":32,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\helicone\\streamlit_app.py":{"loc":25,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\news-summary\\streamlit_app.py":{"loc":54,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\pinecone-qa\\streamlit_app.py":{"loc":35,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\pinecone-summary\\streamlit_app.py":{"loc":34,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\search\\streamlit_app.py":{"loc":23,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\text-summary\\streamlit_app.py":{"loc":25,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0},"D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\\url-summary\\streamlit_app.py":{"loc":35,"nosec":0,"SEVERITY.UNDEFINED":0.0,"SEVERITY.LOW":0.0,"SEVERITY.MEDIUM":0.0,"SEVERITY.HIGH":0.0,"CONFIDENCE.UNDEFINED":0.0,"CONFIDENCE.LOW":0.0,"CONFIDENCE.MEDIUM":0.0,"CONFIDENCE.HIGH":0.0}},
+        "toolInfoId": "bandit>>1>>202407081436"
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "templateanalyzer",
+          "organization": "Microsoft",
+          "fullName": "Template Analyzer",
+          "version": "0.7.0+582d9199d19acc60716af8f0874dc51cec6aa01b",
+          "informationUri": "https://github.com/Azure/template-analyzer",
+          "rules": [
+            {
+              "id": "AZR-000280",
+              "name": "Azure.Cognitive.PublicAccess",
+              "fullDescription": {
+                "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate."
+              },
+              "help": {
+                "text": "Consider configuring network access restrictions for Cognitive Services accounts. Limit access to accounts so that access is permitted from authorized virtual networks only."
+              },
+              "shortDescription": {
+                "text": "Restrict Cognitive Service endpoints."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.PublicAccess/"
+            },
+            {
+              "id": "AZR-000282",
+              "name": "Azure.Cognitive.DisableLocalAuth",
+              "fullDescription": {
+                "text": "To send requests to Cognitive Services endpoints, each request must include an authentication header. Cognitive Services endpoints supports authentication with keys or tokens. Using an Azure AD token instead of a cryptographic key has some additional security benefits.\r\nWith Azure AD authentication, the identity is validated against Azure AD identity provider. Using Azure AD identities centralizes identity management and auditing.\r\nOnce you decide to use Azure AD authentication, you can disable authentication using keys."
+              },
+              "help": {
+                "text": "Consider only using Azure AD identities to authenticate requests to Cognitive Services accounts. Once configured, disable authentication based on access keys."
+              },
+              "shortDescription": {
+                "text": "Use identity-based authentication for Cognitive Services accounts."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "To send requests to Cognitive Services endpoints, each request must include an authentication header. Cognitive Services endpoints supports authentication with keys or tokens. Using an Azure AD token instead of a cryptographic key has some additional security benefits.\r\nWith Azure AD authentication, the identity is validated against Azure AD identity provider. Using Azure AD identities centralizes identity management and auditing.\r\nOnce you decide to use Azure AD authentication, you can disable authentication using keys."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.DisableLocalAuth/"
+            },
+            {
+              "id": "AZR-000283",
+              "name": "Azure.Cognitive.PrivateEndpoints",
+              "fullDescription": {
+                "text": "By default, a public endpoint is enabled for Cognitive Services accounts. The public endpoint is used for all access except for requests that use a Private Endpoint. Access through the public endpoint can be disabled or restricted to authorized virtual networks.\r\nData exfiltration is an attack where an malicious actor does an unauthorized data transfer. Private Endpoints help prevent data exfiltration by an internal or external malicious actor. They do this by providing clear separation between public and private endpoints. As a result, broad access to public endpoints which could be operated by a malicious actor are not required."
+              },
+              "help": {
+                "text": "Consider accessing Cognitive Services accounts by Private Endpoints and disabling public endpoints."
+              },
+              "shortDescription": {
+                "text": "Use Cognitive Service Private Endpoints."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "By default, a public endpoint is enabled for Cognitive Services accounts. The public endpoint is used for all access except for requests that use a Private Endpoint. Access through the public endpoint can be disabled or restricted to authorized virtual networks.\r\nData exfiltration is an attack where an malicious actor does an unauthorized data transfer. Private Endpoints help prevent data exfiltration by an internal or external malicious actor. They do this by providing clear separation between public and private endpoints. As a result, broad access to public endpoints which could be operated by a malicious actor are not required."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.PrivateEndpoints/"
+            }
+          ],
+          "properties": {
+            "RawName": "templateanalyzer"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "startTimeUtc": "2024-07-08T14:36:58.014Z",
+          "endTimeUtc": "2024-07-08T14:37:01.735Z",
+          "toolExecutionNotifications": [
+            {
+              "message": {
+                "text": "Discovered 1 template-parameter pairs to analyze"
+              },
+              "level": "note"
+            }
+          ],
+          "executionSuccessful": true
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///D:/a/GenAI_Security_Demo/GenAI_Security_Demo"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "mdc-openai-resource.json",
+            "uriBaseId": "ROOTPATH"
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "AZR-000280",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate.",
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "6c5332f67cf0b0f5bab09e2e65cda1818ab38badde34a6b411c8c7004046f85e",
+            "gdnAlternativeSignature0": "1a4e1f993c4fd284cccfb4fc9c72855437f97bf4483b06ab12833c4c4b697805"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "6c5332f67cf0b0f5bab09e2e65cda1818ab38badde34a6b411c8c7004046f85e",
+            "gdnAlternativeSignature0": "1a4e1f993c4fd284cccfb4fc9c72855437f97bf4483b06ab12833c4c4b697805"
+          }
+        },
+        {
+          "ruleId": "AZR-000280",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate.",
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "c277e487c60ab4d817d6574151770b625fb0eb7aaf02f5fcf4e85d2fd36c6be4",
+            "gdnAlternativeSignature0": "d017ff33dd0c1e3fa3aa890f11f2fcb7f07ac62979e414413df3391a7e69d931"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "c277e487c60ab4d817d6574151770b625fb0eb7aaf02f5fcf4e85d2fd36c6be4",
+            "gdnAlternativeSignature0": "d017ff33dd0c1e3fa3aa890f11f2fcb7f07ac62979e414413df3391a7e69d931"
+          }
+        },
+        {
+          "ruleId": "AZR-000282",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "To send requests to Cognitive Services endpoints, each request must include an authentication header. Cognitive Services endpoints supports authentication with keys or tokens. Using an Azure AD token instead of a cryptographic key has some additional security benefits.\r\nWith Azure AD authentication, the identity is validated against Azure AD identity provider. Using Azure AD identities centralizes identity management and auditing.\r\nOnce you decide to use Azure AD authentication, you can disable authentication using keys.",
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "f01f8532c1a595a337344fb93e58ffed568dc79626327a5bb0856a5be310453c",
+            "gdnAlternativeSignature0": "9b0a43d081e2c3c0ddbc6270b16cf966c57e4438311f858c9c04c668e204125e"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "f01f8532c1a595a337344fb93e58ffed568dc79626327a5bb0856a5be310453c",
+            "gdnAlternativeSignature0": "9b0a43d081e2c3c0ddbc6270b16cf966c57e4438311f858c9c04c668e204125e"
+          }
+        },
+        {
+          "ruleId": "AZR-000283",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "By default, a public endpoint is enabled for Cognitive Services accounts. The public endpoint is used for all access except for requests that use a Private Endpoint. Access through the public endpoint can be disabled or restricted to authorized virtual networks.\r\nData exfiltration is an attack where an malicious actor does an unauthorized data transfer. Private Endpoints help prevent data exfiltration by an internal or external malicious actor. They do this by providing clear separation between public and private endpoints. As a result, broad access to public endpoints which could be operated by a malicious actor are not required.",
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "2a92efcb0cc0d0a66d2adaeb9628aa88db3ad9c9c996cdfe4e5f33b9d3a51e10",
+            "gdnAlternativeSignature0": "482734aab69e364bfae890d8d30c8368c1b77fc89b262e7b9a8896528c1e310a"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "2a92efcb0cc0d0a66d2adaeb9628aa88db3ad9c9c996cdfe4e5f33b9d3a51e10",
+            "gdnAlternativeSignature0": "482734aab69e364bfae890d8d30c8368c1b77fc89b262e7b9a8896528c1e310a"
+          }
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "policies": [
+        {
+          "name": "GitHub",
+          "version": "2.0.3"
+        }
+      ],
+      "properties": {
+        "toolInfoId": "templateanalyzer>>2>>202407081436"
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "checkov",
+          "organization": "bridgecrew",
+          "version": "3.2.144",
+          "informationUri": "https://checkov.io",
+          "rules": [
+            {
+              "id": "CKV_AWS_187",
+              "name": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)",
+              "fullDescription": {
+                "text": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)"
+              },
+              "help": {
+                "text": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-107"
+            },
+            {
+              "id": "CKV_AWS_122",
+              "name": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance",
+              "fullDescription": {
+                "text": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance"
+              },
+              "help": {
+                "text": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-direct-internet-access-is-disabled-for-an-amazon-sagemaker-notebook-instance"
+            },
+            {
+              "id": "CKV_AWS_22",
+              "name": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK",
+              "fullDescription": {
+                "text": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK"
+              },
+              "help": {
+                "text": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-14"
+            },
+            {
+              "id": "CKV_AWS_306",
+              "name": "Ensure SageMaker notebook instances should be launched into a custom VPC",
+              "fullDescription": {
+                "text": "Ensure SageMaker notebook instances should be launched into a custom VPC"
+              },
+              "help": {
+                "text": "Ensure SageMaker notebook instances should be launched into a custom VPC\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-306"
+            },
+            {
+              "id": "CKV_AWS_371",
+              "name": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2",
+              "fullDescription": {
+                "text": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2"
+              },
+              "help": {
+                "text": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "CKV_AWS_307",
+              "name": "Ensure SageMaker Users should not have root access to SageMaker notebook instances",
+              "fullDescription": {
+                "text": "Ensure SageMaker Users should not have root access to SageMaker notebook instances"
+              },
+              "help": {
+                "text": "Ensure SageMaker Users should not have root access to SageMaker notebook instances\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-307"
+            },
+            {
+              "id": "CKV2_AWS_68",
+              "name": "Ensure SageMaker notebook instance IAM policy is not overly permissive",
+              "fullDescription": {
+                "text": "Ensure SageMaker notebook instance IAM policy is not overly permissive"
+              },
+              "help": {
+                "text": "Ensure SageMaker notebook instance IAM policy is not overly permissive\nResource: aws_sagemaker_notebook_instance.my_sagemaker_notebook"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "CKV2_GHA_1",
+              "name": "Ensure top-level permissions are not set to write-all",
+              "fullDescription": {
+                "text": "Ensure top-level permissions are not set to write-all"
+              },
+              "help": {
+                "text": "Ensure top-level permissions are not set to write-all\nResource: on(MSDO windows-latest)"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            }
+          ],
+          "properties": {
+            "RawName": "checkov"
+          }
+        }
+      },
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ContosoDefenderDemo/GenAI_Security_Demo",
+          "revisionId": "f57c7aa2b8353aa339657ac508e83fc94a357fa7",
+          "branch": "main",
+          "properties": {
+            "RepositoryRoot": "D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo"
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CKV_AWS_187",
+          "ruleIndex": 0,
+          "level": "note",
+          "message": {
+            "text": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sagemaker.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "52576bf46190f9985ac4fbcdd7e93bcd7ff419f242648060c95bf7a81f50be10",
+            "gdnAlternativeSignature0": "fc29455ae3b4655572fca3b001aadb928f37c89e71a1aa20d02b3eee35da1c4d"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "52576bf46190f9985ac4fbcdd7e93bcd7ff419f242648060c95bf7a81f50be10",
+            "gdnAlternativeSignature0": "fc29455ae3b4655572fca3b001aadb928f37c89e71a1aa20d02b3eee35da1c4d"
+          },
+          "attachments": []
+        },
+        {
+          "ruleId": "CKV_AWS_122",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sagemaker.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "ac81733ca63db7a08c1e24893fcef72988c24cf64d469c1946f0068cb53ef5e4",
+            "gdnAlternativeSignature0": "84eccdfb3550c397a876d0f4d70921d4a4a2e2a0c5e250fd673c833fe2ab0d12"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "ac81733ca63db7a08c1e24893fcef72988c24cf64d469c1946f0068cb53ef5e4",
+            "gdnAlternativeSignature0": "84eccdfb3550c397a876d0f4d70921d4a4a2e2a0c5e250fd673c833fe2ab0d12"
+          },
+          "attachments": []
+        },
+        {
+          "ruleId": "CKV_AWS_22",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sagemaker.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "8da7c70e883bc1f165d6e6bc39201ed9939f32df5ed73785458d008b52eb2492",
+            "gdnAlternativeSignature0": "b8b0fd920ea89f91ab714b0290d470bb091d7a1bf7e82bab88760542706e606b"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "8da7c70e883bc1f165d6e6bc39201ed9939f32df5ed73785458d008b52eb2492",
+            "gdnAlternativeSignature0": "b8b0fd920ea89f91ab714b0290d470bb091d7a1bf7e82bab88760542706e606b"
+          },
+          "attachments": []
+        },
+        {
+          "ruleId": "CKV_AWS_306",
+          "ruleIndex": 3,
+          "message": {
+            "text": "Ensure SageMaker notebook instances should be launched into a custom VPC"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sagemaker.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "43d26c2731f05ce2c88a0b5430ae1a36926f8db3abcea23c6c79f33ae6608cc4",
+            "gdnAlternativeSignature0": "73cc78b5101361d74901d8504dfbe2d9605a1105d239dce1cc32c718e07ea3b3"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "43d26c2731f05ce2c88a0b5430ae1a36926f8db3abcea23c6c79f33ae6608cc4",
+            "gdnAlternativeSignature0": "73cc78b5101361d74901d8504dfbe2d9605a1105d239dce1cc32c718e07ea3b3"
+          },
+          "attachments": []
+        },
+        {
+          "ruleId": "CKV_AWS_371",
+          "ruleIndex": 4,
+          "message": {
+            "text": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sagemaker.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "b562d6991e3dd5f94ed2b4326eee6c8fc140248d2f4bdb5b3f2c9d91c5371d62",
+            "gdnAlternativeSignature0": "de6cead1ee7dfc8778e7104230c4b0734b7b259fedcd471ca4a21854bc8c45c7"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "b562d6991e3dd5f94ed2b4326eee6c8fc140248d2f4bdb5b3f2c9d91c5371d62",
+            "gdnAlternativeSignature0": "de6cead1ee7dfc8778e7104230c4b0734b7b259fedcd471ca4a21854bc8c45c7"
+          },
+          "attachments": []
+        },
+        {
+          "ruleId": "CKV_AWS_307",
+          "ruleIndex": 5,
+          "message": {
+            "text": "Ensure SageMaker Users should not have root access to SageMaker notebook instances"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sagemaker.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "c11c4ca9664d18cc790f80f60b9ee20c7df8c972833b1687ec46fe4c3ea3d001",
+            "gdnAlternativeSignature0": "7ff950d760e7c4c850caa533f3c3d29d37bce6b1faa2fc665c38c723acee91eb"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "c11c4ca9664d18cc790f80f60b9ee20c7df8c972833b1687ec46fe4c3ea3d001",
+            "gdnAlternativeSignature0": "7ff950d760e7c4c850caa533f3c3d29d37bce6b1faa2fc665c38c723acee91eb"
+          },
+          "attachments": []
+        },
+        {
+          "ruleId": "CKV2_AWS_68",
+          "ruleIndex": 6,
+          "message": {
+            "text": "Ensure SageMaker notebook instance IAM policy is not overly permissive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sagemaker.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 14,
+                  "snippet": {
+                    "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "ac998c1b822856c619066c4b7127362c619ecf0ecdf1f1e8c3d39e6479414775",
+            "gdnAlternativeSignature0": "a81db4be3b1529a0481cf7011edcc5cd03a67e69b5e0e1709dc454744224af3a"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "ac998c1b822856c619066c4b7127362c619ecf0ecdf1f1e8c3d39e6479414775",
+            "gdnAlternativeSignature0": "a81db4be3b1529a0481cf7011edcc5cd03a67e69b5e0e1709dc454744224af3a"
+          },
+          "attachments": []
+        },
+        {
+          "ruleId": "CKV2_GHA_1",
+          "ruleIndex": 7,
+          "message": {
+            "text": "Ensure top-level permissions are not set to write-all"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": ".github/workflows/defender-for-devops.yml"
+                },
+                "region": {
+                  "startLine": 7,
+                  "endLine": 8,
+                  "snippet": {
+                    "text": ""
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "gdnPrimarySignature": "a62667a3758c4300339dbb547aada80484f7deacb2da17d53ec67b9c8e3a53ae",
+            "gdnAlternativeSignature0": "601fb3aa7f4a685d5cf486289fa10934c9c5a74c162c10ac5b57fefffec5ebd6"
+          },
+          "fingerprints": {
+            "gdnPrimarySignature": "a62667a3758c4300339dbb547aada80484f7deacb2da17d53ec67b9c8e3a53ae",
+            "gdnAlternativeSignature0": "601fb3aa7f4a685d5cf486289fa10934c9c5a74c162c10ac5b57fefffec5ebd6"
+          },
+          "attachments": []
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "policies": [
+        {
+          "name": "GitHub",
+          "version": "2.0.3"
+        }
+      ],
+      "properties": {
+        "toolInfoId": "checkov>>3>>202407081436"
+      }
+    }
+  ],
+  "properties": {
+    "producer": "MicrosoftSecurityDevOps"
+  }
+}

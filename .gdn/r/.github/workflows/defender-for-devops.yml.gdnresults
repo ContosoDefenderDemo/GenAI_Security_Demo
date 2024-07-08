@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "locationUri": ".github/workflows/defender-for-devops.yml",
+  
+  "results": [
+    {
+      "signature": "a62667a3758c4300339dbb547aada80484f7deacb2da17d53ec67b9c8e3a53ae",
+      "alternativeSignatures": [
+        "601fb3aa7f4a685d5cf486289fa10934c9c5a74c162c10ac5b57fefffec5ebd6"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV2_GHA_1",
+      "ruleIndex": 7,
+      "level": "error",
+      "message": {
+        "text": "Ensure top-level permissions are not set to write-all"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": ".github/workflows/defender-for-devops.yml"
+            },
+            "region": {
+              "startLine": 7,
+              "endLine": 8,
+              "snippet": {
+                "text": ""
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    }
+  ]
+}

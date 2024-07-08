@@ -1,0 +1,204 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "AZR-000280",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AZR-000280",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AZR-000282",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AZR-000283",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "id": "default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "mdc-openai-resource.json",
+                  "uriBaseId": "ROOTPATH",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "Template Analyzer",
+          "organization": "Microsoft",
+          "fullName": "Template Analyzer",
+          "version": "0.7.0+582d9199d19acc60716af8f0874dc51cec6aa01b",
+          "informationUri": "https://github.com/Azure/template-analyzer",
+          "rules": [
+            {
+              "id": "AZR-000280",
+              "name": "Azure.Cognitive.PublicAccess",
+              "fullDescription": {
+                "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate."
+              },
+              "help": {
+                "text": "Consider configuring network access restrictions for Cognitive Services accounts. Limit access to accounts so that access is permitted from authorized virtual networks only."
+              },
+              "shortDescription": {
+                "text": "Restrict Cognitive Service endpoints."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "By default, public network access is enabled for a Cognitive Service account. Service Endpoints and Private Link can be leveraged to restrict access to PaaS endpoints. When access is restricted, access by malicious actor is from an unauthorized virtual network is mitigated.\r\nConfigure service endpoints and private links where appropriate."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.PublicAccess/"
+            },
+            {
+              "id": "AZR-000282",
+              "name": "Azure.Cognitive.DisableLocalAuth",
+              "fullDescription": {
+                "text": "To send requests to Cognitive Services endpoints, each request must include an authentication header. Cognitive Services endpoints supports authentication with keys or tokens. Using an Azure AD token instead of a cryptographic key has some additional security benefits.\r\nWith Azure AD authentication, the identity is validated against Azure AD identity provider. Using Azure AD identities centralizes identity management and auditing.\r\nOnce you decide to use Azure AD authentication, you can disable authentication using keys."
+              },
+              "help": {
+                "text": "Consider only using Azure AD identities to authenticate requests to Cognitive Services accounts. Once configured, disable authentication based on access keys."
+              },
+              "shortDescription": {
+                "text": "Use identity-based authentication for Cognitive Services accounts."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "To send requests to Cognitive Services endpoints, each request must include an authentication header. Cognitive Services endpoints supports authentication with keys or tokens. Using an Azure AD token instead of a cryptographic key has some additional security benefits.\r\nWith Azure AD authentication, the identity is validated against Azure AD identity provider. Using Azure AD identities centralizes identity management and auditing.\r\nOnce you decide to use Azure AD authentication, you can disable authentication using keys."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.DisableLocalAuth/"
+            },
+            {
+              "id": "AZR-000283",
+              "name": "Azure.Cognitive.PrivateEndpoints",
+              "fullDescription": {
+                "text": "By default, a public endpoint is enabled for Cognitive Services accounts. The public endpoint is used for all access except for requests that use a Private Endpoint. Access through the public endpoint can be disabled or restricted to authorized virtual networks.\r\nData exfiltration is an attack where an malicious actor does an unauthorized data transfer. Private Endpoints help prevent data exfiltration by an internal or external malicious actor. They do this by providing clear separation between public and private endpoints. As a result, broad access to public endpoints which could be operated by a malicious actor are not required."
+              },
+              "help": {
+                "text": "Consider accessing Cognitive Services accounts by Private Endpoints and disabling public endpoints."
+              },
+              "shortDescription": {
+                "text": "Use Cognitive Service Private Endpoints."
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "By default, a public endpoint is enabled for Cognitive Services accounts. The public endpoint is used for all access except for requests that use a Private Endpoint. Access through the public endpoint can be disabled or restricted to authorized virtual networks.\r\nData exfiltration is an attack where an malicious actor does an unauthorized data transfer. Private Endpoints help prevent data exfiltration by an internal or external malicious actor. They do this by providing clear separation between public and private endpoints. As a result, broad access to public endpoints which could be operated by a malicious actor are not required."
+                }
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Cognitive.PrivateEndpoints/"
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "startTimeUtc": "2024-07-08T14:36:58.014Z",
+          "endTimeUtc": "2024-07-08T14:37:01.735Z",
+          "toolExecutionNotifications": [
+            {
+              "message": {
+                "text": "Discovered 1 template-parameter pairs to analyze"
+              },
+              "level": "note"
+            }
+          ],
+          "executionSuccessful": true
+        }
+      ],
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///D:/a/GenAI_Security_Demo/GenAI_Security_Demo"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "mdc-openai-resource.json",
+            "uriBaseId": "ROOTPATH"
+          }
+        }
+      ],
+      "columnKind": "utf16CodeUnits"
+    }
+  ]
+}

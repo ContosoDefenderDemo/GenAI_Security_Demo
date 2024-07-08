@@ -1,0 +1,146 @@
+{
+  "hydrated": false,
+  "properties": {
+    "hydrationStatus": "This file does not contain identifying data. It is safe to check into your repo. To hydrate this file with identifying data, run `guardian hydrate --help` and follow the guidance."
+  },
+  "version": "1.0.0",
+  "snapshots": {
+    "history.run.202407081436": {
+      "name": "history.run.202407081436",
+      "createdDate": "2024-07-08 14:37:01Z",
+      "lastUpdatedDate": "2024-07-08 14:37:01Z"
+    }
+  },
+  "results": {
+    "706ecb5056e1e763a93cb69a999b099f3eab5d882bdc01f58b8bc8dce0ad4055": {
+      "signature": "706ecb5056e1e763a93cb69a999b099f3eab5d882bdc01f58b8bc8dce0ad4055",
+      "target": "file:///D:/a/GenAI_Security_Demo/GenAI_Security_Demo",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "antimalware",
+      "ruleId": "NoThreatsFound",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "6c5332f67cf0b0f5bab09e2e65cda1818ab38badde34a6b411c8c7004046f85e": {
+      "signature": "6c5332f67cf0b0f5bab09e2e65cda1818ab38badde34a6b411c8c7004046f85e",
+      "target": "mdc-openai-resource.json",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "templateanalyzer",
+      "ruleId": "AZR-000280",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "c277e487c60ab4d817d6574151770b625fb0eb7aaf02f5fcf4e85d2fd36c6be4": {
+      "signature": "c277e487c60ab4d817d6574151770b625fb0eb7aaf02f5fcf4e85d2fd36c6be4",
+      "target": "mdc-openai-resource.json",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "templateanalyzer",
+      "ruleId": "AZR-000280",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "f01f8532c1a595a337344fb93e58ffed568dc79626327a5bb0856a5be310453c": {
+      "signature": "f01f8532c1a595a337344fb93e58ffed568dc79626327a5bb0856a5be310453c",
+      "target": "mdc-openai-resource.json",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "templateanalyzer",
+      "ruleId": "AZR-000282",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "2a92efcb0cc0d0a66d2adaeb9628aa88db3ad9c9c996cdfe4e5f33b9d3a51e10": {
+      "signature": "2a92efcb0cc0d0a66d2adaeb9628aa88db3ad9c9c996cdfe4e5f33b9d3a51e10",
+      "target": "mdc-openai-resource.json",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "templateanalyzer",
+      "ruleId": "AZR-000283",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "52576bf46190f9985ac4fbcdd7e93bcd7ff419f242648060c95bf7a81f50be10": {
+      "signature": "52576bf46190f9985ac4fbcdd7e93bcd7ff419f242648060c95bf7a81f50be10",
+      "target": "sagemaker.tf",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV_AWS_187",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "ac81733ca63db7a08c1e24893fcef72988c24cf64d469c1946f0068cb53ef5e4": {
+      "signature": "ac81733ca63db7a08c1e24893fcef72988c24cf64d469c1946f0068cb53ef5e4",
+      "target": "sagemaker.tf",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV_AWS_122",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "8da7c70e883bc1f165d6e6bc39201ed9939f32df5ed73785458d008b52eb2492": {
+      "signature": "8da7c70e883bc1f165d6e6bc39201ed9939f32df5ed73785458d008b52eb2492",
+      "target": "sagemaker.tf",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV_AWS_22",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "43d26c2731f05ce2c88a0b5430ae1a36926f8db3abcea23c6c79f33ae6608cc4": {
+      "signature": "43d26c2731f05ce2c88a0b5430ae1a36926f8db3abcea23c6c79f33ae6608cc4",
+      "target": "sagemaker.tf",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV_AWS_306",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "b562d6991e3dd5f94ed2b4326eee6c8fc140248d2f4bdb5b3f2c9d91c5371d62": {
+      "signature": "b562d6991e3dd5f94ed2b4326eee6c8fc140248d2f4bdb5b3f2c9d91c5371d62",
+      "target": "sagemaker.tf",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV_AWS_371",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "c11c4ca9664d18cc790f80f60b9ee20c7df8c972833b1687ec46fe4c3ea3d001": {
+      "signature": "c11c4ca9664d18cc790f80f60b9ee20c7df8c972833b1687ec46fe4c3ea3d001",
+      "target": "sagemaker.tf",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV_AWS_307",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "ac998c1b822856c619066c4b7127362c619ecf0ecdf1f1e8c3d39e6479414775": {
+      "signature": "ac998c1b822856c619066c4b7127362c619ecf0ecdf1f1e8c3d39e6479414775",
+      "target": "sagemaker.tf",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV2_AWS_68",
+      "createdDate": "2024-07-08 14:37:01Z"
+    },
+    "a62667a3758c4300339dbb547aada80484f7deacb2da17d53ec67b9c8e3a53ae": {
+      "signature": "a62667a3758c4300339dbb547aada80484f7deacb2da17d53ec67b9c8e3a53ae",
+      "target": ".github/workflows/defender-for-devops.yml",
+      "memberOf": [
+        "history.run.202407081436"
+      ],
+      "tool": "checkov",
+      "ruleId": "CKV2_GHA_1",
+      "createdDate": "2024-07-08 14:37:01Z"
+    }
+  }
+}

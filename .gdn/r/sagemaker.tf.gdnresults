@@ -1,0 +1,217 @@
+{
+  "version": "1.0.0",
+  "locationUri": "sagemaker.tf",
+  
+  "results": [
+    {
+      "signature": "52576bf46190f9985ac4fbcdd7e93bcd7ff419f242648060c95bf7a81f50be10",
+      "alternativeSignatures": [
+        "fc29455ae3b4655572fca3b001aadb928f37c89e71a1aa20d02b3eee35da1c4d"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV_AWS_187",
+      "ruleIndex": 0,
+      "level": "error",
+      "message": {
+        "text": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "sagemaker.tf"
+            },
+            "region": {
+              "startLine": 1,
+              "endLine": 14,
+              "snippet": {
+                "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "signature": "ac81733ca63db7a08c1e24893fcef72988c24cf64d469c1946f0068cb53ef5e4",
+      "alternativeSignatures": [
+        "84eccdfb3550c397a876d0f4d70921d4a4a2e2a0c5e250fd673c833fe2ab0d12"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV_AWS_122",
+      "ruleIndex": 1,
+      "level": "error",
+      "message": {
+        "text": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "sagemaker.tf"
+            },
+            "region": {
+              "startLine": 1,
+              "endLine": 14,
+              "snippet": {
+                "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "signature": "8da7c70e883bc1f165d6e6bc39201ed9939f32df5ed73785458d008b52eb2492",
+      "alternativeSignatures": [
+        "b8b0fd920ea89f91ab714b0290d470bb091d7a1bf7e82bab88760542706e606b"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV_AWS_22",
+      "ruleIndex": 2,
+      "level": "error",
+      "message": {
+        "text": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "sagemaker.tf"
+            },
+            "region": {
+              "startLine": 1,
+              "endLine": 14,
+              "snippet": {
+                "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "signature": "43d26c2731f05ce2c88a0b5430ae1a36926f8db3abcea23c6c79f33ae6608cc4",
+      "alternativeSignatures": [
+        "73cc78b5101361d74901d8504dfbe2d9605a1105d239dce1cc32c718e07ea3b3"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV_AWS_306",
+      "ruleIndex": 3,
+      "level": "error",
+      "message": {
+        "text": "Ensure SageMaker notebook instances should be launched into a custom VPC"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "sagemaker.tf"
+            },
+            "region": {
+              "startLine": 1,
+              "endLine": 14,
+              "snippet": {
+                "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "signature": "b562d6991e3dd5f94ed2b4326eee6c8fc140248d2f4bdb5b3f2c9d91c5371d62",
+      "alternativeSignatures": [
+        "de6cead1ee7dfc8778e7104230c4b0734b7b259fedcd471ca4a21854bc8c45c7"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV_AWS_371",
+      "ruleIndex": 4,
+      "level": "error",
+      "message": {
+        "text": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "sagemaker.tf"
+            },
+            "region": {
+              "startLine": 1,
+              "endLine": 14,
+              "snippet": {
+                "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "signature": "c11c4ca9664d18cc790f80f60b9ee20c7df8c972833b1687ec46fe4c3ea3d001",
+      "alternativeSignatures": [
+        "7ff950d760e7c4c850caa533f3c3d29d37bce6b1faa2fc665c38c723acee91eb"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV_AWS_307",
+      "ruleIndex": 5,
+      "level": "error",
+      "message": {
+        "text": "Ensure SageMaker Users should not have root access to SageMaker notebook instances"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "sagemaker.tf"
+            },
+            "region": {
+              "startLine": 1,
+              "endLine": 14,
+              "snippet": {
+                "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "signature": "ac998c1b822856c619066c4b7127362c619ecf0ecdf1f1e8c3d39e6479414775",
+      "alternativeSignatures": [
+        "a81db4be3b1529a0481cf7011edcc5cd03a67e69b5e0e1709dc454744224af3a"
+      ],
+      "toolInfoId": "checkov>>3>>202407081436",
+      "ruleId": "CKV2_AWS_68",
+      "ruleIndex": 6,
+      "level": "error",
+      "message": {
+        "text": "Ensure SageMaker notebook instance IAM policy is not overly permissive"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "sagemaker.tf"
+            },
+            "region": {
+              "startLine": 1,
+              "endLine": 14,
+              "snippet": {
+                "text": "resource \"aws_sagemaker_notebook_instance\" \"my_sagemaker_notebook\" {\n  name          = \"MySageMakerNotebookInstance\"\n  role_arn      = \"arn:aws:iam::123456789012:role/SageMakerRole\"\n  instance_type = \"ml.t2.medium\"\n  direct_internet_access = \"Enabled\" # Set to \"Enabled\" or \"Disabled\"\n\n  # Tags are a map of key-value pairs\n  # tags = {\n  #   Name = \"MySageMakerInstance\"\n  # }\n\n  # The kms_key_id is omitted to ensure the instance is not encrypted.\n  # kms_key_id = \"\"\n}\n"
+              }
+            }
+          }
+        }
+      ],
+      "attachments": []
+    }
+  ]
+}

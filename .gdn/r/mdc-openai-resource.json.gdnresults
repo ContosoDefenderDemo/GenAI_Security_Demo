@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "locationUri": "mdc-openai-resource.json",
+  "originalUriBaseIds": {
+    "ROOTPATH": {
+      "uri": "file:///D:/a/GenAI_Security_Demo/GenAI_Security_Demo"
+    }
+  },
+  "results": [
+    {
+      "signature": "6c5332f67cf0b0f5bab09e2e65cda1818ab38badde34a6b411c8c7004046f85e",
+      "alternativeSignatures": [
+        "1a4e1f993c4fd284cccfb4fc9c72855437f97bf4483b06ab12833c4c4b697805"
+      ],
+      "toolInfoId": "templateanalyzer>>2>>202407081436",
+      "ruleId": "AZR-000280",
+      "ruleIndex": 0,
+      "level": "error",
+      "message": {
+        "id": "default"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "mdc-openai-resource.json",
+              "uriBaseId": "ROOTPATH"
+            },
+            "region": {
+              "startLine": 31
+            }
+          }
+        }
+      ]
+    },
+    {
+      "signature": "c277e487c60ab4d817d6574151770b625fb0eb7aaf02f5fcf4e85d2fd36c6be4",
+      "alternativeSignatures": [
+        "d017ff33dd0c1e3fa3aa890f11f2fcb7f07ac62979e414413df3391a7e69d931"
+      ],
+      "toolInfoId": "templateanalyzer>>2>>202407081436",
+      "ruleId": "AZR-000280",
+      "ruleIndex": 0,
+      "level": "error",
+      "message": {
+        "id": "default"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "mdc-openai-resource.json",
+              "uriBaseId": "ROOTPATH"
+            },
+            "region": {
+              "startLine": 27
+            }
+          }
+        }
+      ]
+    },
+    {
+      "signature": "f01f8532c1a595a337344fb93e58ffed568dc79626327a5bb0856a5be310453c",
+      "alternativeSignatures": [
+        "9b0a43d081e2c3c0ddbc6270b16cf966c57e4438311f858c9c04c668e204125e"
+      ],
+      "toolInfoId": "templateanalyzer>>2>>202407081436",
+      "ruleId": "AZR-000282",
+      "ruleIndex": 1,
+      "level": "error",
+      "message": {
+        "id": "default"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "mdc-openai-resource.json",
+              "uriBaseId": "ROOTPATH"
+            },
+            "region": {
+              "startLine": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "signature": "2a92efcb0cc0d0a66d2adaeb9628aa88db3ad9c9c996cdfe4e5f33b9d3a51e10",
+      "alternativeSignatures": [
+        "482734aab69e364bfae890d8d30c8368c1b77fc89b262e7b9a8896528c1e310a"
+      ],
+      "toolInfoId": "templateanalyzer>>2>>202407081436",
+      "ruleId": "AZR-000283",
+      "ruleIndex": 2,
+      "level": "error",
+      "message": {
+        "id": "default"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "mdc-openai-resource.json",
+              "uriBaseId": "ROOTPATH"
+            },
+            "region": {
+              "startLine": 31
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

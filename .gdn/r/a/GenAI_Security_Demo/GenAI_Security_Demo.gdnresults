@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "locationUri": "file:///D:/a/GenAI_Security_Demo/GenAI_Security_Demo",
+  
+  "results": [
+    {
+      "signature": "706ecb5056e1e763a93cb69a999b099f3eab5d882bdc01f58b8bc8dce0ad4055",
+      "alternativeSignatures": [],
+      "toolInfoId": "antimalware>>0>>202407081436",
+      "ruleId": "NoThreatsFound",
+      "kind": "pass",
+      "level": "none",
+      "message": {
+        "text": "\r\n\r\n-------------------------------------------------------------------------------------\r\nMpCmdRun: Command Line: \"C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.24050.7-0\\MpCmdRun.exe\" -Scan -ScanType 3 -DisableRemediation -File D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo\r\n Start Time: \u000e Mon \u000e Jul \u000e 08 \u000e 2024 14:35:51\r\n\r\nMpEnsureProcessMitigationPolicy(0x5): hr = 0x1\r\nStarting RunCommandScan.\r\nINFO: ScheduleJob is not set. Skipping signature update.\r\nScanning path as folder: D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo.\r\nStart: MpScan(MP_FEATURE_SUPPORTED, dwOptions=33558561, path D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo, DisableRemediation = 1, BootSectorScan = 0, Timeout in days = 1)\r\nMpScan() started\r\nMpScan() was completed\r\nFinish: MpScanStart(MP_FEATURE_SUPPORTED, dwOptions=33558561)\r\nFinish: MpScan(MP_FEATURE_SUPPORTED, dwOptions=33558561, path D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo, DisableRemediation = 1, BootSectorScan = 0, Timeout in days = 1)\r\nScanning D:\\a\\GenAI_Security_Demo\\GenAI_Security_Demo found no threats.\r\nSkipping clean as this is a custom scan with no remediation.\r\nMpCmdRun: End Time: \u000e Mon \u000e Jul \u000e 08 \u000e 2024 14:35:52\r\n-------------------------------------------------------------------------------------\r\n"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "file:///D:/a/GenAI_Security_Demo/GenAI_Security_Demo"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
