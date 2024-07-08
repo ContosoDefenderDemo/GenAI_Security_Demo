@@ -24,6 +24,10 @@ jobs:
       uses: microsoft/security-devops-action@preview
       id: msdo
 
+
+    - name: Run yor action
+      uses: bridgecrewio/yor-action@main
+
       # Upload alerts to the Security tab
     - name: Upload alerts to Security tab
       uses: github/codeql-action/upload-sarif@v2
